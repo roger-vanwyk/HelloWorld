@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+THIS APP IS DESIGNED FOLLOWING THE ANDROID MATERIAL GUIDELINES
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/lower_curve">
+
+        <!--TEXT VIEW DISPLAYS APP NAME-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="32sp" />
+        <!--IMAGE VIEW FOR A BACK BUTTON-->
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/toDo"
+            android:src="@drawable/back_button_white" />
+
+        <!--IMAGE VIEW FOR A SEARCH BUTTON-->
+        <ImageView
+            android:id="@+id/searchBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="25dp"
+            android:contentDescription="@string/toDo"
+            android:src="@drawable/ic_search" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <!--MAKE ALL CATEGORY CARD IMAGE VIEWS CLICKABLE-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <!--CATEGORY ONE CARD VIEW: PORTFOLIO-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCategoryOne"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="bottom"
+                    android:focusable="true"
+                    app:cardCornerRadius="20dp">
+
+                    <!--ALL BUTTONS WERE IMAGE VIEWS ORIGINALLY-->
+                    <ImageView
+                        android:id="@+id/categoryOneImg"
+                        android:layout_width="160dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:contentDescription="@string/toDo"
+                        android:src="@drawable/marketing"
+                        app:srcCompat="@drawable/marketing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/categoryOne"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        app:fontFamily="sans-serif-black" />
+
+                </androidx.cardview.widget.CardView>
+
+                <!--CATEGORY TWO CARD VIEW: ABOUT ME-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCategoryTwo"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="20dp"
+                    android:focusable="true"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/categoryTwoImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/aboutMe"
+                        android:padding="30dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/maths"
+                        app:srcCompat="@drawable/maths" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/categoryTwo"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        app:fontFamily="sans-serif-black" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!--CATEGORY THREE CARD VIEW: QUALIFICATION-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCategoryThree"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="bottom"
+                    android:focusable="true"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/categoryThreeImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/toDo"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/business"
+                        app:srcCompat="@drawable/business" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/categoryThree"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        app:fontFamily="sans-serif-black" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!--CATEGORY FOUR CARD VIEW: CAREER HISTORY-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCategoryFour"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="20dp"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/categoryFourImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:contentDescription="@string/toDo"
+                        android:padding="30dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/design"
+                        app:srcCompat="@drawable/design" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/categoryFour"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        app:fontFamily="sans-serif-black" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!--BOTTOM NAVIGATION MENU-->
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/top_corner_curve"
+                app:itemIconSize="30dp"
+                app:itemIconTint="@drawable/bottom_item_selector"
+                app:menu="@menu/navigation_menu" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--THIS RESOURCE LAYOUT DISPLAY MY CERTIFICATES AND RELATED INFO-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--HEADER CONTAINER-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:targetApi="lollipop">
+
+                <View
+                    android:id="@+id/top_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:background="@drawable/top_design_shape" />
+
+                <View
+                    android:id="@+id/top_view_inner_radii"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/top_view"
+                    android:background="@drawable/topview_inner_radii" />
+
+
+                <ImageView
+                    android:id="@+id/qualificationTitleImg"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="32dp"
+                    android:contentDescription="@string/toDo"
+                    android:src="@drawable/android_java_nanodegree"
+                    app:srcCompat="@drawable/baseline_keyboard_arrow_left_white_48"
+                    app:tint="@color/colorLightWhite" />
+
+                <View
+                    android:id="@+id/circle_view"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-60dp"
+                    android:layout_marginEnd="-50dp"
+                    android:layout_marginRight="-30dp"
+                    android:background="@drawable/faint_circle" />
+
+            </RelativeLayout>
+
+            <!--CERTIFICATES CONTAINER-->
+            <!--QUALIFICATION ONE-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/cross_corner_curve_background"
+                android:elevation="8dp"
+                tools:targetApi="lollipop">
+
+                <ImageView
+                    android:id="@+id/qualificationOneImg"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/toDo"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/android_java_nanodegree"
+                    app:srcCompat="@drawable/android_java_nanodegree" />
+
+                <TextView
+                    android:id="@+id/qualificationOneTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toEndOf="@id/qualificationOneImg"
+                    android:layout_toRightOf="@id/qualificationOneImg"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/qualificationOneTxtString"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <!--QUALIFICATION TWO-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/cross_corner_curve_background"
+                android:elevation="8dp"
+                tools:targetApi="lollipop">
+
+                <ImageView
+                    android:id="@+id/qualificationTwoImg"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/toDo"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/google_online_marketing"
+                    app:srcCompat="@drawable/google_online_marketing" />
+
+                <TextView
+                    android:id="@+id/qualificationTwoTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toEndOf="@id/qualificationTwoImg"
+                    android:layout_toRightOf="@id/qualificationTwoImg"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/qualificationTwoTxtString"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <!--QUALIFICATION THREE-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/cross_corner_curve_background"
+                android:elevation="8dp"
+                tools:targetApi="lollipop">
+
+                <ImageView
+                    android:id="@+id/qualificationThreeImg"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/toDo"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/responsive_web_design"
+                    app:srcCompat="@drawable/responsive_web_design" />
+
+                <TextView
+                    android:id="@+id/qualificationThreeTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toEndOf="@id/qualificationThreeImg"
+                    android:layout_toRightOf="@id/qualificationThreeImg"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/qualificationThreeTxtString"
+                    android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            <!--QUALIFICATION FOUR-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/cross_corner_curve_background"
+                android:elevation="8dp"
+                tools:targetApi="lollipop">
+
+                <ImageView
+                    android:id="@+id/qualificationFourImg"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/toDo"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/front_end_libraries"
+                    app:srcCompat="@drawable/front_end_libraries" />
+
+                <TextView
+                    android:id="@+id/qualificationFourTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toEndOf="@id/qualificationFourImg"
+                    android:layout_toRightOf="@id/qualificationFourImg"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/qualificationFourTxtString"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

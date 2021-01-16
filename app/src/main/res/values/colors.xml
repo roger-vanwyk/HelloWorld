@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+<!--CUSTOMISED COLORS-->
+    <color name="tanBackground">#ffffff7DA</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorLightWhite">#f5f5f5</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorOrange">#FF9800</color>
+    <color name="colorGrey">#E9EAEE</color>
+    <color name="colorOrangePrimary">#FFC107</color>
+    <color name="colorOrangeDark">#f57c00</color>
+    <color name="colorOrangeFaint">#fdc999</color>
+    <color name="colorGreyDark">#757575</color>
+    <color name="colorYellow">#F8BA0F</color>
+    <color name="customGrey">#535353</color>
+    <color name="colorBlue">#293859</color>
+    <color name="lightGrey">#EEEEEE</color>
+</resources>
