@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.example.roger.helloworld.PortfolioActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -82,6 +83,7 @@
             android:textSize="28sp"
             android:textStyle="bold" />
 
+        <!--ANDROID APPLICATIONS-->
         <HorizontalScrollView
             android:id="@+id/web_app"
             android:layout_width="wrap_content"
@@ -107,6 +109,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/prjtOneAndroid"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:contentDescription="@string/toDo"
@@ -140,6 +143,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/prjtTwoAndroid"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:contentDescription="@string/toDo"
@@ -172,6 +176,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/prjtThreeAndroid"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:contentDescription="@string/toDo"
@@ -209,10 +214,11 @@
             android:textSize="28sp"
             android:textStyle="bold" />
 
+        <!--WEB APPLICATIONS-->
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="240dp"
-            android:layout_below="@+id/portfolioSubTitleTwo"
+            android:layout_below="@id/portfolioSubTitleTwo"
             android:layout_marginTop="10dp">
 
             <LinearLayout
@@ -233,6 +239,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/prjtOneWeb"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:contentDescription="@string/toDo"
@@ -266,6 +273,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/prjtTwoWeb"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:contentDescription="@string/toDo"
@@ -299,6 +307,7 @@
                         app:cardCornerRadius="20dp">
 
                         <ImageView
+                            android:id="@+id/prjtThreeWeb"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:contentDescription="@string/toDo"
@@ -322,6 +331,15 @@
             </LinearLayout>
 
         </HorizontalScrollView>
+
+        <!--WEBVIEW WIDGET TO DISPLAY ONLINE EMULATORS-->
+        <Webview
+            android:id="@+id/webEmulatorView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"/>
 
     </RelativeLayout>
 
