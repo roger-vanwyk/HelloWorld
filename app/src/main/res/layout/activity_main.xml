@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-THIS APP IS DESIGNED FOLLOWING THE ANDROID MATERIAL GUIDELINES
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+THIS IS THE MAIN SCREEN UI LAYOUT DESIGNED FOLLOWING THE ANDROID MATERIAL GUIDELINES
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -70,7 +71,7 @@ THIS APP IS DESIGNED FOLLOWING THE ANDROID MATERIAL GUIDELINES
 
                     <!--ALL BUTTONS WERE IMAGE VIEWS ORIGINALLY-->
                     <ImageView
-                        android:id="@+id/categoryOneImg"
+                        android:id="@+id/categoryOnePortfolio"
                         android:layout_width="160dp"
                         android:layout_height="180dp"
                         android:layout_gravity="center"
@@ -102,7 +103,7 @@ THIS APP IS DESIGNED FOLLOWING THE ANDROID MATERIAL GUIDELINES
                     app:cardCornerRadius="20dp">
 
                     <ImageView
-                        android:id="@+id/categoryTwoImg"
+                        android:id="@+id/categoryTwoProfile"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
@@ -144,7 +145,7 @@ THIS APP IS DESIGNED FOLLOWING THE ANDROID MATERIAL GUIDELINES
                     app:cardCornerRadius="20dp">
 
                     <ImageView
-                        android:id="@+id/categoryThreeImg"
+                        android:id="@+id/categoryThreeQualification"
                         android:layout_width="wrap_content"
                         android:layout_height="160dp"
                         android:layout_gravity="center"
@@ -177,7 +178,7 @@ THIS APP IS DESIGNED FOLLOWING THE ANDROID MATERIAL GUIDELINES
                     app:cardCornerRadius="20dp">
 
                     <ImageView
-                        android:id="@+id/categoryFourImg"
+                        android:id="@+id/categoryFourCareer"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
@@ -207,10 +208,10 @@ THIS APP IS DESIGNED FOLLOWING THE ANDROID MATERIAL GUIDELINES
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottomMenu"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="120dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/top_corner_curve"
-                app:itemIconSize="30dp"
+                app:itemIconSize="50dp"
                 app:itemIconTint="@drawable/bottom_item_selector"
                 app:menu="@menu/navigation_menu" />
 

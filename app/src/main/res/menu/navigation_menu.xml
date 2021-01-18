@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/dashboard"
-        android:icon="@drawable/baseline_dashboard_white_48"
+        android:id="@+id/gitHub"
+        android:icon="@drawable/github"
         android:title="" />
 
     <item
-        android:id="@+id/playCircle"
-        android:icon="@drawable/baseline_play_circle_outline_white_48"
+        android:id="@+id/linkedIn"
+        android:icon="@drawable/linkedin"
         android:title="" />
 
     <item
-        android:id="@+id/favouriteHeart"
-        android:icon="@drawable/baseline_favorite_border_white_48"
+        android:id="@+id/sendEmail"
+        android:icon="@drawable/ic_email_24dp"
         android:title="" />
     <item
-        android:id="@+id/customProfile"
-        android:icon="@drawable/baseline_account_circle_white_48"
+        android:id="@+id/voiceCall"
+        android:icon="@drawable/ic_call_24dp"
         android:title="" />
 </menu>
