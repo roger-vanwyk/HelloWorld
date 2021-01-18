@@ -1,4 +1,3 @@
 package com.example.roger.helloworld
 
-class ProfileActivity {
-}
+class ProfileActivity

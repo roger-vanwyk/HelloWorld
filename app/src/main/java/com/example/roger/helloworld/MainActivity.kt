@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 * Created by Roger Van Wyk on 14 Jan 2021 as a Curriculum Vitae & Applications Portfolio.
 *
 * Android Java Nanodegree obtained through a grant from African App Launchpad & Google.
-* Responsive Web Design at Udemy.
+* HTML, CSS, JavaScript at freeCodeCamp, responsive web design at Udemy, and Ruby + Ruby-on-Rails at The Odin Prroject.
 * Google Online Marketing Fundamentals at Google Tech for Africa.
 *
 * I am hoping to start a career in tech, coming from a military aviation environment,

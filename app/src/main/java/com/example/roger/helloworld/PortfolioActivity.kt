@@ -3,21 +3,39 @@ package com.example.roger.helloworld
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.os.Parcelable
+import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
+private var Nothing?.data: Uri?
+    get() {
+        TODO("Not yet implemented")
+    }
+    set(webView) = Unit
+private var Parcelable.WebViewClient: WebViewClient
+    get() {
+        TODO("Not yet implemented")
+    }
+    set(webView) {}
+
 class PortfolioActivity(var webView: Any) : AppCompatActivity() {
+    private var loadURL: Any = TODO()
+    private val webview: Any = TODO()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_portfolio)
-        var webView = findViewById(R.id.webEmulatorView)
-        webView.settings.setJavaScriptEnabled(true)
+        var webView = Intent(findViewById(R.id.webEmulatorView))
+        webView.setJavaScriptEnabled(true)
 
-        webView.webViewClient = object : WebViewClient() {
+        webView.WebViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
-                view?.loadUrl(url)
+                if (url != null) {
+                    view?.loadUrl(url)
+                }
                 return true
             }
         }
@@ -26,7 +44,7 @@ class PortfolioActivity(var webView: Any) : AppCompatActivity() {
         // sets on-click listener for image view named prjtOneAndroid
         prjtOneAndroid.setOnClickListener {
             // opens prjtOneAndroid web url
-            webview.loadUrl("https://appetize.io/embed/4cw1pw99keqnkj4wvawgvpkuxr?device=nexus5&autoplay=true&scale=60&orientation=portrait&osVersion=8.1")
+            webview.loadUrl("https://bit.ly/Webflix")
             Toast.makeText(this@PortfolioActivity, "Android Project One", Toast.LENGTH_SHORT).show()
         }
         // gets reference to image view named prjtTwoAndroid
@@ -35,7 +53,7 @@ class PortfolioActivity(var webView: Any) : AppCompatActivity() {
         prjtTwoAndroid.setOnClickListener {
             // opens prjtTwoAndroid web url
             val webview = null
-            webview.loadUrl("https://appetize.io/embed/ua3tc4g5jfd2xrmnd15w7yx3zr?device=nexus5&autoplay=true&scale=60&orientation=portrait&osVersion=8.1")
+            webview?.loadUrl("https://bit.ly/UdacityLearning")
             Toast.makeText(this@PortfolioActivity, "Android Project Two", Toast.LENGTH_SHORT).show()
         }
         // gets reference to image view named prjtThreeAndroid
@@ -44,7 +62,7 @@ class PortfolioActivity(var webView: Any) : AppCompatActivity() {
         prjtThreeAndroid.setOnClickListener {
             // opens prjtThreeAndroid web url
             val webview = null
-            webview.loadUrl("https://appetize.io/embed/66yb7abk8wuf458uk2nzcwm3x4?device=nexus5&autoplay=true&scale=60&orientation=portrait&osVersion=8.1")
+            webview?.loadUrl("https://bit.ly/PilotDemo")
             Toast.makeText(this@PortfolioActivity, "Android Project Three", Toast.LENGTH_SHORT).show()
         }
         // gets reference to image view named prjtOneWeb
@@ -52,8 +70,10 @@ class PortfolioActivity(var webView: Any) : AppCompatActivity() {
         // sets on-click listener for image view named prjtOneWeb
         prjtOneWeb.setOnClickListener {
             // opens prjtOneWeb web url
-            val openURL = Intent(android.context.intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://codepen.io/rogervw84/full/JgrVgW/")
+            Uri.parse("https://codepen.io/rogervw84/full/JgrVgW/").also {
+                var openURL = null
+                openURL.data = it
+            }
             Toast.makeText(this@PortfolioActivity, "Web Project One", Toast.LENGTH_SHORT).show()
         }
         // gets reference to image view named prjtTwoWeb
@@ -61,8 +81,9 @@ class PortfolioActivity(var webView: Any) : AppCompatActivity() {
         // sets on-click listener for image view named prjtTwoWeb
         prjtTwoWeb.setOnClickListener {
             // opens prjtTwoWeb web url
-            val openURL = Intent(android.context.intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://codepen.io/rogervw84/full/ZEERqmX")
+            Uri.parse("https://codepen.io/rogervw84/full/ZEERqmX").also {
+                it.also { val also = it.also { it.also { } } }
+            }
             Toast.makeText(this@PortfolioActivity, "Web Project Two", Toast.LENGTH_SHORT).show()
         }
         // gets reference to image view named prjtThreeWeb
@@ -70,9 +91,16 @@ class PortfolioActivity(var webView: Any) : AppCompatActivity() {
         // sets on-click listener for image view named prjtThreeWeb
         prjtThreeWeb.setOnClickListener {
             // opens prjtThreeWeb web url
-            val openURL = Intent(android.context.intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://codepen.io/rogervw84/full/")
+            loadURL = Uri.parse("https://codepen.io/rogervw84/full/")
             Toast.makeText(this@PortfolioActivity, "Web Project Three", Toast.LENGTH_SHORT).show()
         }
     }
+}
+
+private fun Any.loadUrl(s: Comparable<String>) {
+    TODO("Not yet implemented")
+}
+
+private fun Intent.setJavaScriptEnabled(b: Boolean) {
+    TODO("Not yet implemented")
 }
