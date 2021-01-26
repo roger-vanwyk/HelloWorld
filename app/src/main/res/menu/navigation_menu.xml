@@ -16,7 +16,7 @@
         android:icon="@drawable/ic_email_24dp"
         android:title="" />
     <item
-        android:id="@+id/voiceCall"
-        android:icon="@drawable/ic_call_24dp"
+        android:id="@+id/jitsiMeet"
+        android:icon="@drawable/video_conference"
         android:title="" />
 </menu>

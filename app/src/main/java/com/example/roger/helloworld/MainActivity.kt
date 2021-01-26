@@ -105,17 +105,17 @@ val mOnNavigationItemOneSelectedListener = BottomNavigationView.OnNavigationItem
 //Third Item
 val mOnNavigationItemThreeSelectedListener= BottomNavigationView.OnNavigationItemSelectedListener {
     // opens EmailActivity
-    val intentToEmail = Intent(this, EmailActivity::class.java)
+    val intentToEmail = Intent(EmailActivity::class.java)
     startActivity(intentToEmail)
-    Toast.makeText(this@MainActivity, "Email", Toast.LENGTH_SHORT).show()
+    Toast.makeText(this@menu, "Email", Toast.LENGTH_SHORT).show()
     return@OnNavigationItemSelectedListener true
 }
 
 //Fourth Item
 val mOnNavigationItemFourSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener {
     // opens JitsiActivity
-    val intentToJitsi = Intent(this, JitsiActivity::class.java)
+    val intentToJitsi = Intent(JitsiActivity::class.java)
     startActivity(intentToJitsi)
-    Toast.makeText(this@MainActivity, "Meeting", Toast.LENGTH_SHORT).show()
+    Toast.makeText(this@menu, "Meeting", Toast.LENGTH_SHORT).show()
     return@OnNavigationItemSelectedListener true
 }
