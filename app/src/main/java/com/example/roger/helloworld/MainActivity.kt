@@ -1,10 +1,14 @@
 package com.example.roger.helloworld
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import java.net.URL
 
 /*
 * Created by Roger Van Wyk on 14 Jan 2021 as a Curriculum Vitae & Applications Portfolio.
@@ -19,10 +23,13 @@ import androidx.appcompat.app.AppCompatActivity
 * I am hoping to start a career in tech, coming from a military aviation environment,
 * as a senior air traffic controller, air traffic services instructor, and aviation safety officer.
 *
-* Email: roger.vanwyk@gmail.com
+* LinkedIn: "https://linkedin.com/in/roger-vanwyk"
+* GitHub: "https://github.com/roger-vanwyk"
 *
 * */
 abstract class MainActivity : AppCompatActivity() {
+    abstract var openURL: Intent
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -75,4 +82,40 @@ abstract class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, "Career", Toast.LENGTH_SHORT).show()
         }
     }
+}
+
+val context: Any
+    get() {
+        TODO()
+    }
+
+//Sets bottom navigation item on-click listener
+//First item
+val mOnNavigationItemOneSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener {
+        val openGithubURL = Intent(android.content.Intent.ACTION_VIEW)
+        URL("https://github.com/roger-vanwyk")
+        return@OnNavigationItemSelectedListener true
+    }
+//Second item
+            val mOnNavigationItemTwoSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener {
+                val openLinkedinURL = Intent(android.content.Intent.ACTION_VIEW)
+                URL("https://linkedin.com/in/roger-vanwyk")
+                return@OnNavigationItemSelectedListener true
+            }
+//Third Item
+val mOnNavigationItemThreeSelectedListener= BottomNavigationView.OnNavigationItemSelectedListener {
+    // opens EmailActivity
+    val intentToEmail = Intent(this, EmailActivity::class.java)
+    startActivity(intentToEmail)
+    Toast.makeText(this@MainActivity, "Email", Toast.LENGTH_SHORT).show()
+    return@OnNavigationItemSelectedListener true
+}
+
+//Fourth Item
+val mOnNavigationItemFourSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener {
+    // opens JitsiActivity
+    val intentToJitsi = Intent(this, JitsiActivity::class.java)
+    startActivity(intentToJitsi)
+    Toast.makeText(this@MainActivity, "Meeting", Toast.LENGTH_SHORT).show()
+    return@OnNavigationItemSelectedListener true
 }

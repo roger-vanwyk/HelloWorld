@@ -18,7 +18,7 @@ class PortfolioActivity(var webView: Any) : AppCompatActivity() {
         prjtOneAndroid.setOnClickListener {
 
             // opens prjtOneAndroid web url
-            webView.Uri("https://bit.ly/Webflix")
+            webView.Uri()
             Toast.makeText(this@PortfolioActivity, "Android Project One", Toast.LENGTH_SHORT).show()
         }
 
@@ -29,7 +29,7 @@ class PortfolioActivity(var webView: Any) : AppCompatActivity() {
         prjtTwoAndroid.setOnClickListener {
 
             // opens prjtTwoAndroid web url
-            webView.Uri("https://bit.ly/UdacityLearning")
+            webView.Uri()
             Toast.makeText(this@PortfolioActivity, "Android Project Two", Toast.LENGTH_SHORT).show()
         }
 
@@ -40,7 +40,7 @@ class PortfolioActivity(var webView: Any) : AppCompatActivity() {
         prjtThreeAndroid.setOnClickListener {
 
             // opens prjtThreeAndroid web url
-            webView.Uri("https://bit.ly/PilotDemo")
+            webView.Uri()
             Toast.makeText(this@PortfolioActivity, "Android Project Three", Toast.LENGTH_SHORT).show()
         }
 
@@ -81,6 +81,6 @@ class PortfolioActivity(var webView: Any) : AppCompatActivity() {
     }
 }
 
-private fun Any.Uri(s: String) {
+internal fun Any.Uri() {
     TODO("Not yet implemented")
 }
